@@ -20,12 +20,12 @@
     "redux": "^3.0.4"
   },
   "peerDependencies": {
+    },
+  "devDependencies": {
     "chai": "^3.2.0",
     "lolex": "^1.4.0",
     "sinon": "^1.17.2",
-    "sinon-chai": "^2.8.0"
-  },
-  "devDependencies": {
+    "sinon-chai": "^2.8.0",
     "autoprefixer": "^6.1.2",
     "babel-core": "^6.2.1",
     "babel-preset-es2015": "^6.1.18",
