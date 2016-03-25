@@ -1,16 +1,16 @@
 {
-  "name": "farely-react",
-  "version": "1.1.14",
-  "description": "A rebuild of farely.io in React",
-  "repository": "https://www.github.com/imcnally/farely-react",
+  "name": "manga-framework",
+  "version": "0.1.0",
+  "description": "A react js framework for elearning content creation",
+  "repository": "https://github.com/CodefuseInc/manga-framework",
   "main": "Gulpfile.js",
   "scripts": {
     "lint": "gulp lint",
     "start": "gulp",
     "test": "gulp test"
   },
-  "author": "Ian McNally <ianmcnally@gmail.com>",
-  "license": "ISC",
+  "author": "Sundar Srinivasakannan <msg.sundar@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE" ,
   "dependencies": {
     "normalize.css": "^3.0.2",
     "react": "^0.14.3",
