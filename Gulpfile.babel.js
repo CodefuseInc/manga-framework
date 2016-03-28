@@ -25,10 +25,16 @@ import replace from 'gulp-replace'
 import source from 'vinyl-source-stream'
 import s3 from 'gulp-s3'
 import uglify from 'gulp-uglify'
+import ifElse from 'gulp-if-else'
+
+process.env.NODE_ENV = 'development';
+var isDev = process.env.NODE_ENV === 'development';
+console.log(process.env.NODE_ENV+" --- "+isDev);
 
 const karmaConfig = join(__dirname, 'karma.conf.js')
 
-gulp.task('compile', ['copy:icons', 'copy:normalize', 'index.html', 'copy:manifest', 'javascript', 'style'])
+gulp.task('compile', ['copy:icons', 'copy:normalize','copy:statics','index.html', 'copy:manifest', 'javascript', 'style','copy:vendorjavascript'])
+
 
 gulp.task('connect', () => {
   connect.server({
@@ -36,6 +42,13 @@ gulp.task('connect', () => {
     livereload : true
   })
 })
+
+
+gulp.task('copy:statics',()=>{
+  gulp.src('src/static/*').pipe(gulp.dest('dist/'));
+  gulp.src('src/static/data/*').pipe(gulp.dest('dist/data/'));
+})
+
 
 gulp.task('copy:icons', () => {
   gulp.src('src/icons/*')
@@ -52,6 +65,11 @@ gulp.task('copy:manifest', () => {
 gulp.task('copy:normalize', () => {
   gulp.src('node_modules/normalize.css/normalize.css')
     .pipe(gulp.dest('dist/stylesheets/'))
+})
+
+gulp.task('copy:vendorjavascript',() => {
+  gulp.src('node_modules/tincanjs/build/*').pipe(gulp.dest('dist/javascript/vendor/'));
+  
 })
 
 gulp.task('index.html', () => {

@@ -1,5 +1,5 @@
 import { createStore } from 'redux'
-import { FARE_PARAMETER } from '../constants/fare_updates'
+import { FARE_PARAMETER } from '../constants/course_defaults'
 import fareService from '../services/fare'
 
 const initialState = {

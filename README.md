@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/CodefuseInc/manga-framework.svg?branch=master)](https://travis-ci.org/CodefuseInc/manga-framework)
 
-# fusionX-react
+# Manga-framework
+## Based on react
 
 A eLearning Framework written in ReactJS
 

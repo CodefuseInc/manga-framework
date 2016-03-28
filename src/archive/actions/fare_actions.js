@@ -1,4 +1,4 @@
-import FARE_UPDATES from '../constants/fare_updates'
+import FARE_UPDATES from '../constants/course_defaults'
 import Fares from '../stores/fares'
 
 const updateFareParameters = (remainingBalance, maxToSpend) => {
