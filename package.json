@@ -19,7 +19,7 @@
   "scripts": {
     "build": "gulp build",
     "prepublish": "gulp publish",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
