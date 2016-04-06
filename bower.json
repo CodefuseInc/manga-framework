@@ -1,0 +1,35 @@
+{
+  "name": "manga",
+  "description": "E-learning framework for next-gen content creation",
+  "version": "0.0.1",
+  "main": "dist/Manga.js",
+  "license": "https://github.com/CodefuseInc/manga-framework/blob/master/LICENSE",
+  "homepage": "https://github.com/CodefuseInc/manga-framework",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodefuseInc/manga-framework.git"
+  },
+  "authors": [
+    "Codefuse",
+    "Sundar Srini",
+    "Cory Mayfield"
+  ],
+  "keywords": [
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "docs",
+    "examples",
+    "src",
+    "lib",
+    "website",
+    "CONTRIBUTING.md",
+    "Gulpfile.js",
+    "index.js",
+    "package.json"
+  ]
+}
